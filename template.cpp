@@ -1,6 +1,6 @@
 /*
 By Jeffrey Huang
-See README for more details at https://github.com/JeffreyHuang06/cp
+See README for more details at https://github.com/JeffreyHuang06/cp-template
 */
 
 #include <bits/stdc++.h>
