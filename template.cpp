@@ -22,6 +22,8 @@ typedef pair<int,int> pii;
 typedef pair<ll,ll> pz;
 
 #define vec vector
+#define uset unordered_set
+#define umap unordered_map
 #define pb push_back
 #define pub push_back
 #define pob pop_back
