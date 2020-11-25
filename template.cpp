@@ -169,6 +169,18 @@ vec<T> find_all(InputIterator first, InputIterator last, const T& val){
 	return inds;
 }
 
+// to hash the stl's
+// from geeksforgeeks
+struct hash_pair {
+    template <class T1, class T2>
+    size_t operator()(const pair<T1, T2> &p) const
+    {
+        auto hash1 = hash<T1>{}(p.first);
+        auto hash2 = hash<T2>{}(p.second);
+        return hash1 ^ hash2;
+    }
+};
+
 template <class T>
 void Max(T &a, const T &b)
 {
