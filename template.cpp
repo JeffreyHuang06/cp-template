@@ -1,6 +1,6 @@
 /*
 By Jeffrey Huang
-See README for more details at https://github.com/JeffreyHuang06/cp
+See README for more details at https://github.com/JeffreyHuang06/cp-template
 */
 
 #include <bits/stdc++.h>
@@ -22,6 +22,8 @@ typedef pair<int,int> pii;
 typedef pair<ll,ll> pz;
 
 #define vec vector
+#define uset unordered_set
+#define umap unordered_map
 #define pb push_back
 #define pub push_back
 #define pob pop_back
@@ -166,6 +168,18 @@ vec<T> find_all(InputIterator first, InputIterator last, const T& val){
 
 	return inds;
 }
+
+// to hash the stl's
+// from geeksforgeeks
+struct hash_pair {
+    template <class T1, class T2>
+    size_t operator()(const pair<T1, T2> &p) const
+    {
+        auto hash1 = hash<T1>{}(p.first);
+        auto hash2 = hash<T2>{}(p.second);
+        return hash1 ^ hash2;
+    }
+};
 
 template <class T>
 void Max(T &a, const T &b)
