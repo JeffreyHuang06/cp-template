@@ -1,6 +1,6 @@
 /*
 By Jeffrey Huang
-See README for more details at https://github.com/JeffreyHuang06/cp-template
+See README for more details at https://github.com/JeffreyHuang06/cp
 */
 
 #include <bits/stdc++.h>
@@ -48,6 +48,10 @@ typedef pair<ll,ll> pz;
 #define aendl "<-\n"
 #define space ' '
 #define elif else if
+
+#define MAXINT 100007
+#define MAXLL 1000000007
+
 // #define cout cout<<
 #define cint(n) int n;cin>>n;
 #define dispbr(n) for(auto& i:n) cout<<i<<endl;
@@ -171,7 +175,8 @@ vec<T> find_all(InputIterator first, InputIterator last, const T& val){
 
 // to hash the stl's
 // from geeksforgeeks
-struct hash_pair {
+struct hash_pair
+{
     template <class T1, class T2>
     size_t operator()(const pair<T1, T2> &p) const
     {
